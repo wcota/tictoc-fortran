@@ -26,7 +26,7 @@ call ctimer%tic()
 call ctimer%toc()
 ```
 
-To see how much time was spend doing something: 
+To see how much time was spent doing something: 
 ```
 write(*,*) ctimer%t_tot
 ```
