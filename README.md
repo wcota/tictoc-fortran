@@ -31,7 +31,7 @@ To see how much time was spent doing something:
 write(*,*) ctimer%t_tot
 ```
 
-To reset the couting:
+To reset the counting:
 ```fortran
 call ctimer%reset()
 ```
