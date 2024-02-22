@@ -8,7 +8,7 @@ Copy the file `src/tictoc.f90` or add the package as a dependence using the [For
 
 ```toml
 [dependencies]
-mod_tictoc.git = "https://github.com/wcota/tictoc_fortran"
+tictoc_fortran.git = "https://github.com/wcota/tictoc_fortran"
 ```
 
 Import the module using `use mod_tictoc`. This package provides the `tictoc` object. Create one using
