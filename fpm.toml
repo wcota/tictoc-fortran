@@ -1,0 +1,13 @@
+name = "tictoc_fortran"
+version = "0.1.0"
+license = "license"
+author = "Wesley Cota"
+maintainer = "wlcota@gmail.com"
+copyright = "Copyright 2024, Wesley Cota"
+description = "A simple timer for Fortran"
+
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+
