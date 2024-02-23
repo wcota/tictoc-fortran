@@ -15,7 +15,7 @@ program example_tictoc
    end do
    call ctimer%toc()
 
-   write (*, '(a,f)') 'CPU TIME = ', ctimer%t_tot
+   write (*, '(g0)') 'CPU TIME = ', ctimer%t_tot
 
    write (*, '(a)') 'Now measuring inside the loop...'
 
@@ -26,6 +26,6 @@ program example_tictoc
       call ctimer%toc()
    end do
 
-   write (*, '(a,f)') 'CPU TIME = ', ctimer%t_tot
+   write (*, '(g0)') 'CPU TIME = ', ctimer%t_tot
 
 end program
