@@ -7,28 +7,28 @@ module mod_tictoc
    type :: tictoc
       real(kind=dp):: t_ini, t_fin, t_tot
    contains
-      procedure :: reset
-      procedure :: start
-      procedure :: tic
-      procedure :: toc
+      procedure :: reset => reset_tictoc
+      procedure :: start => reset_tictoc
+      procedure :: tic => tic_tictoc
+      procedure :: toc => toc_tictoc
    end type
 
    public :: tictoc
 
 contains
 
-   subroutine tic(this)
+   subroutine tic_tictoc(this)
       class(tictoc) :: this
       call cpu_time(this%t_ini)
    end subroutine
 
-   subroutine toc(this)
+   subroutine toc_tictoc(this)
       class(tictoc) :: this
       call cpu_time(this%t_fin)
       this%t_tot = this%t_tot + (this%t_fin - this%t_ini)
    end subroutine
 
-   subroutine reset(this)
+   subroutine reset_tictoc(this)
       class(tictoc) :: this
       this%t_tot = 0d0
    end subroutine
