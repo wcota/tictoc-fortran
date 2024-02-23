@@ -8,7 +8,6 @@ module mod_tictoc
       real(kind=dp):: t_ini, t_fin, t_tot
    contains
       procedure :: reset => reset_tictoc
-      procedure :: start => reset_tictoc
       procedure :: tic => tic_tictoc
       procedure :: toc => toc_tictoc
    end type

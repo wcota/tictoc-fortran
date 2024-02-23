@@ -17,9 +17,9 @@ Import the module using `use mod_tictoc`. This package provides the `tictoc` obj
 type(tictoc)    :: ctimer
 ```
 
-Start the timer:
+Reset the timer:
 ```fortran
-call ctimer%start()
+call ctimer%reset()
 ```
 
 Use the `tic` to start the clock, and `toc` to pause it: 
@@ -40,12 +40,6 @@ To see how much time was spent doing something, use the `real` variable `t_tot`:
 
 ```fortran
 write(*,*) ctimer%t_tot
-```
-
-It is also possible to reset the clock by using:
-
-```fortran
-call ctimer%reset()
 ```
 
 ## Example

@@ -8,7 +8,7 @@ program example_tictoc
    integer         :: i, j
    real(kind=dp)          :: x(10000)
 
-   call ctimer%start()
+   call ctimer%reset()
    call ctimer%tic()
    do j = 1, 100000
       x(:) = log(23.)*[(i, i=1, 10000)]
