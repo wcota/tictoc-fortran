@@ -42,6 +42,17 @@ To see how much time was spent doing something, use the `real` variable `t_tot`:
 write(*,*) ctimer%t_tot
 ```
 
+A possible usage would be to stop the simulation after `x` samples if the program is taking too long:
+
+```fortran
+call ctimer%reset()
+call ctimer%tic()
+sampling: do sample=1,1000
+    if (ctimer%t_tot > 5.0_dp * 60.0_dp) exit sampling
+    ! dynamics
+enddo sampling
+```
+
 ## Example
 
 An example is available at `test/example.f90`. To run it with Fpm, use `fpm test example`. Expected output:
