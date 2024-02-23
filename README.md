@@ -48,7 +48,7 @@ A possible usage would be to stop the simulation after `x` samples if the progra
 call ctimer%reset()
 call ctimer%tic()
 sampling: do sample=1,1000
-    if (ctimer%t_tot > 5.0_dp * 60.0_dp) exit sampling
+    if (ctimer%now() > 5.0_dp * 60.0_dp) exit sampling
     ! dynamics
 enddo sampling
 ```

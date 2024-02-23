@@ -24,6 +24,8 @@ program example_tictoc
       call ctimer%tic()
       x(:) = log(23.)*[(i, i=1, 10000)]
       call ctimer%toc()
+
+      if (j == 5000) write(*, '(g0)') 'CPU TIME NOW (without pausing) = ', ctimer%now()
    end do
 
    write (*, '(g0)') 'CPU TIME = ', ctimer%t_tot
