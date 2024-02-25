@@ -1,4 +1,4 @@
-# tictoc_fortran
+# tictoc-fortran
 
 TicToc routine - Fortran
 
@@ -8,7 +8,7 @@ Copy the file `src/tictoc.f90` or add the package as a dependence using the [For
 
 ```toml
 [dependencies]
-tictoc_fortran.git = "https://github.com/wcota/tictoc_fortran"
+tictoc-fortran.git = "https://github.com/wcota/tictoc-fortran"
 ```
 
 Import the module using `use mod_tictoc`. This package provides the `tictoc` object. Create one using
