@@ -1,4 +1,4 @@
-name = "tictoc_fortran"
+name = "tictoc-fortran"
 version = "0.1.0"
 license = "license"
 author = "Wesley Cota"
