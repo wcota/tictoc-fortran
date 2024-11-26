@@ -55,9 +55,9 @@ enddo sampling
 
 ## Example
 
-An example is available at `test/example.f90`. To run it with Fpm, use `fpm test example`. Expected output:
+An example is available at `example/example.f90`. To run it with Fpm, use `fpm run --example`. Expected output:
 
-```
+```txt
 Project is up to date
 CPU TIME = 
 0.35635800000000001
