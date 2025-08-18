@@ -2,22 +2,23 @@
 
 TicToc routine - Fortran
 
-## Usage 
+## Usage
 
-Copy the file `src/tictoc.f90` or add the package as a dependence using the [Fortran Package Manager](https://fpm.fortran-lang.org/) (Fpm):
+Copy the file `src/tictoc_mod.f90` or add the package as a dependence using the [Fortran Package Manager](https://fpm.fortran-lang.org/) (Fpm):
 
 ```toml
 [dependencies]
 tictoc-fortran.git = "https://github.com/wcota/tictoc-fortran"
 ```
 
-Import the module using `use mod_tictoc`. This package provides the `tictoc` object. Create one using
+Import the module using `use tictoc_mod`. This package provides the `tictoc_t` object. Create one using
 
 ```fortran
-type(tictoc)    :: ctimer
+type(tictoc_t)    :: ctimer
 ```
 
 Reset the timer:
+
 ```fortran
 call ctimer%reset()
 ```

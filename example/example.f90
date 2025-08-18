@@ -1,10 +1,10 @@
 program example_tictoc
-   use mod_tictoc
+   use tictoc_mod
    implicit none
 
    integer, parameter :: dp = selected_real_kind(15)
 
-   type(tictoc)    :: ctimer
+   type(tictoc_t)    :: ctimer
    integer         :: i, j
    real(kind=dp)          :: x(10000)
 
